@@ -9,10 +9,9 @@ int main()
 {
     int a;
     scanf("%d", &a);
-    int *p = &a;
 
     printf("Before function invocation:  a = %d\n", a);
-    ptrfunction(p);
+    ptrfunction(&a);
     printf("After function invocation:  a = %d\n", a);
     return 0;
 }
