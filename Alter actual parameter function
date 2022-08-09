@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+/* function that accepts a pointer for a formal parameter and returns that value plus 25 */
+void ptrfunction(int *ptr) {
+    *ptr += 25;
+}
+
+int main() 
+{
+    int a;
+    scanf("%d", &a);
+    int *p = &a;
+
+    printf("Before function invocation:  a = %d\n", a);
+    ptrfunction(p);
+    printf("After function invocation:  a = %d\n", a);
+    return 0;
+}
